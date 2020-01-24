@@ -149,7 +149,7 @@ all:
 endsnippet
 
 snippet default "default('default_value')"
-my_variable | default("default_value")
+'{{ $1 | default("$2") }}'
 endsnippet
 
 snippet dirname "{{ inventory_dir | dirname }}"
