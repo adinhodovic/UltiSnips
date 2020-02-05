@@ -1,3 +1,23 @@
 snippet hadolint_ignore "# hadolint ignore=DL3016"
 # hadolint ignore=DL3016
 endsnippet
+
+snippet run "RUN"
+RUN $1
+endsnippet
+
+snippet run_apt "RUN apt"
+RUN apt-get $1
+endsnippet
+
+snippet workdir "WORKDIR"
+WORKDIR $1
+endsnippet
+
+snippet copy "COPY"
+COPY $1
+endsnippet
+
+snippet cmd "CMD"
+CMD ['$1']
+endsnippet
