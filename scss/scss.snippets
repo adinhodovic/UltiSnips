@@ -12,3 +12,9 @@ $mq-breakpoints: (
 
 @import "sass-mq";
 endsnippet
+
+snippet @include "Sass mq include from"
+@include mq($from: $1) {
+  $2
+}
+endsnippet
