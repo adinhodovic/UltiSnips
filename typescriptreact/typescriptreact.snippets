@@ -1,0 +1,41 @@
+snippet antd_typography "{ Title } = Typography"
+import { Typography } from 'antd';
+
+const { Title } = Typography;
+endsnippet
+
+snippet antd_default_import "Row, Col"
+import { Row, Col } from 'antd';
+endsnippet
+
+snippet title "<Title>"
+<Title>$1</Title>
+endsnippet
+
+snippet col "<Col>"
+<Col>$1</Col>
+endsnippet
+
+snippet row "<Row>"
+<Row>$1</Row>
+endsnippet
+
+snippet antd_table_column "Table columns"
+const columns = [
+  {
+    title: '$1',
+    dataIndex: '$2',
+    key: '$3',
+  },
+];
+endsnippet
+
+snippet antd_table_data "Column data"
+  const data = [];
+  $1.map(($2: $3) =>
+    data.push({
+      key: $4.id,
+      $5: $6,
+    }),
+  );
+endsnippet
