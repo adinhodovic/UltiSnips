@@ -68,3 +68,7 @@ snippet debugger_tags ""
 {% load debugger_tags %}
 {{ obj | debugger }}
 endsnippet
+
+snippet img_dj "<img src='...'"
+<img src="{% static "$1" %}" alt="$2">
+endsnippet
